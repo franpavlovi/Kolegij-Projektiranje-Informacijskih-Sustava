@@ -1,0 +1,18 @@
+Za surogatni primjer nisam odabrao nijednu konkretnu javno dostupnu
+aplikaciju.
+
+Aplikacija za mljekaru je interna aplikacija koja će se koristiti
+samo u mljekarama tvrtke EKO SIR PUĐA d.o.o. i neće biti dostupna
+široj javnosti niti će biti distribuirana preko
+Trgovine play ili App store-a.
+
+Unatoč tome, sustav će imati standardna korisnička sučelja 
+karakteristična za poslovne informacijske sustave, uključujući:
+
+Rad s obrascima (forme) za unos i obradu podataka
+Pregled i prikaz rezultata u tabličnom i izvještajnom obliku
+Mogućnost uvoza i izvoza podataka u Word i Excel dokumente
+Generiranje izvještaja za operativne i upravljačke potrebe
+
+Ovakav pristup u skladu je s dosadašnjim opisom sustava i odgovara
+funkcionalnostima tipičnih informacijskih sustava za upravljanje poslovnim procesima.
