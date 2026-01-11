@@ -1,0 +1,252 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.0" pages="3">
+  <diagram name="Dijagram klasa" id="CLS-1">
+    <mxGraphModel dx="3078" dy="1824" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="10" parent="1" style="swimlane;startSize=26;rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=bottom;strokeWidth=2;labelPosition=center;verticalLabelPosition=top;" value="Kooperant&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="180" width="280" x="-50" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="khqwdREr0NcY8Nl4CVNT-218" parent="10" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;KOOPERANTID: INT&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;NAZIV: STRING&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;KONTAKT: STRING&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;ADRESA: STRING&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;ISPORUCIMLIJEKO()&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;PREGLEDAJOTKUP()&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;PREGLEDAJISPLATE()&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="40" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="swimlane;startSize=26;rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=bottom;strokeWidth=2;labelPosition=center;verticalLabelPosition=top;" value="Isporuka" vertex="1">
+          <mxGeometry height="180" width="280" x="360" y="60" as="geometry">
+            <mxRectangle height="30" width="680" x="360" y="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p7Om-Kz7dBbq-Y889v_x-225" parent="11" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;ISPORUKAID: INT&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;DATUMISPORUKE: DATE&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;KOLICINA: FLOAT&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;TEMPERATURA: FLOAT&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;KOOPERANTID: INT&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;EVIDENTIRAJISPORUKU()&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;UZMIUZORAK()&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="60" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="swimlane;startSize=26;rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=bottom;strokeWidth=2;labelPosition=center;verticalLabelPosition=top;" value="AnalizaKvalitete" vertex="1">
+          <mxGeometry height="210" width="320" x="720" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p7Om-Kz7dBbq-Y889v_x-230" parent="12" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;ANALIZAID: INT&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;MASNOCA: FLOAT&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;PROTEINI: FLOAT&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;BAKTERIJE: INT&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;STATUSKVALITETE: STRING&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;ISPORUKAID: INT&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;PROVEDIANALIZU()&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;OCJENIKVALITETU()&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;ODOBRIPRERADU()&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="40" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="swimlane;startSize=26;rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=bottom;strokeWidth=2;labelPosition=center;verticalLabelPosition=top;" value="Proizvod&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="280" x="20" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="p7Om-Kz7dBbq-Y889v_x-226" parent="13" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;PROIZVODID: INT&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;NAZIV: STRING&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;ROKTRAJANJA: DATE&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;SERIJAID: INT&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;OZNACIPROIZVOD()&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;DODAJUSKLADISTE()&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="40" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="swimlane;startSize=26;rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=bottom;strokeWidth=2;labelPosition=center;verticalLabelPosition=top;" value="ProizvodnaSerija" vertex="1">
+          <mxGeometry height="200" width="340" x="360" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="p7Om-Kz7dBbq-Y889v_x-221" parent="14" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;SERIJAID: INT&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;LOTBROJ: STRING&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;DATUMPROIZVODNJE: DATE&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;ISPORUKAID: INT&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;EVIDENTIRAJPROIZVODNJU()&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;PRATISLJEDIVOST()&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="60" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="swimlane;startSize=26;rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=bottom;strokeWidth=2;labelPosition=center;verticalLabelPosition=top;" value="Zaliha" vertex="1">
+          <mxGeometry height="190" width="280" x="830" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="p7Om-Kz7dBbq-Y889v_x-233" parent="15" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;ZALIHAID: INT&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;KOLICINA: INT&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;LOKACIJA: STRING&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;PROIZVODID: INT&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;AZURIRAJZALIHU()&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;PROVJERIROKTRAJANJA()&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;FIFOIZDAVANJE()&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="50" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="swimlane;startSize=26;rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=bottom;strokeWidth=2;labelPosition=center;verticalLabelPosition=top;" value="Kupac&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="280" x="20" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="p7Om-Kz7dBbq-Y889v_x-235" parent="16" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;KUPACID: INT&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;NAZIV: STRING&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;KONTAKT: STRING&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;NARUCIPROIZVOD()&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;PRIMIISPORUKU()&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="40" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="swimlane;startSize=26;rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=bottom;strokeWidth=2;labelPosition=center;verticalLabelPosition=top;" value="Narudzba" vertex="1">
+          <mxGeometry height="170" width="280" x="360" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="p7Om-Kz7dBbq-Y889v_x-224" parent="17" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;NARUDZBAID: INT&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;DATUMNARUDZBE: DATE&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;STATUS: STRING&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;KUPACID: INT&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;OBRADINARUDZBU()&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;GENERIRAJOTPREMNICU()&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="60" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="swimlane;startSize=26;rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=bottom;strokeWidth=2;labelPosition=center;verticalLabelPosition=top;" value="Racun" vertex="1">
+          <mxGeometry height="190" width="320" x="680" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="p7Om-Kz7dBbq-Y889v_x-229" parent="18" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;RACUNID: INT&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;IZNOS: FLOAT&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;DATUMIZDAVANJA: DATE&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;NARUDZBAID: INT&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;GENERIRAJRACUN()&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;POSALJIRACUN()&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="50" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" style="swimlane;startSize=26;rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=bottom;strokeWidth=2;labelPosition=center;verticalLabelPosition=top;" value="IsplataKooperantu" vertex="1">
+          <mxGeometry height="210" width="320" x="1040" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="p7Om-Kz7dBbq-Y889v_x-234" parent="19" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;ISPLATAID: INT&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;IZNOS: FLOAT&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;DATUMISPLATE: DATE&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;KOOPERANTID: INT&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;IZVRSIISPLATU()&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 700; text-align: left;&quot;&gt;EVIDENTIRAJISPLATU()&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="60" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="201" edge="1" parent="1" source="10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeWidth=2;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" target="11" value="1..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="202" edge="1" parent="1" source="11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeWidth=2;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" target="12" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="203" edge="1" parent="1" source="13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeWidth=2;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" target="14" value="1..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="204" edge="1" parent="1" source="14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeWidth=2;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" target="15" value="1..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="205" edge="1" parent="1" source="16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeWidth=2;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" target="17" value="1..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="206" edge="1" parent="1" source="17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeWidth=2;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" target="18" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="207" edge="1" parent="1" source="10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeWidth=2;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" target="19" value="1..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="208" edge="1" parent="1" source="14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeWidth=2;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" target="11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="209" edge="1" parent="1" source="17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeWidth=2;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" target="13" value="* (stavke)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Dijagram komponenti" id="COMP-1">
+    <mxGraphModel dx="1426" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="300" parent="1" style="shape=component;whiteSpace=wrap;html=1;strokeWidth=2;" value="Web UI" vertex="1">
+          <mxGeometry height="80" width="180" x="60" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="301" parent="1" style="shape=component;whiteSpace=wrap;html=1;strokeWidth=2;" value="API (REST)" vertex="1">
+          <mxGeometry height="80" width="180" x="300" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="302" parent="1" style="shape=component;whiteSpace=wrap;html=1;strokeWidth=2;" value="Otkup modul" vertex="1">
+          <mxGeometry height="80" width="200" x="120" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="303" parent="1" style="shape=component;whiteSpace=wrap;html=1;strokeWidth=2;" value="Kontrola kvalitete" vertex="1">
+          <mxGeometry height="80" width="220" x="160" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="304" parent="1" style="shape=component;whiteSpace=wrap;html=1;strokeWidth=2;" value="Prerada" vertex="1">
+          <mxGeometry height="80" width="180" x="160" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="305" parent="1" style="shape=component;whiteSpace=wrap;html=1;strokeWidth=2;" value="Skladište/Prodaja" vertex="1">
+          <mxGeometry height="80" width="220" x="150" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="306" parent="1" style="shape=component;whiteSpace=wrap;html=1;strokeWidth=2;" value="Financije" vertex="1">
+          <mxGeometry height="80" width="180" x="300" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="307" parent="1" style="shape=component;whiteSpace=wrap;html=1;strokeWidth=2;" value="Izvještavanje" vertex="1">
+          <mxGeometry height="80" width="200" x="530" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="308" parent="1" style="shape=component;whiteSpace=wrap;html=1;strokeWidth=2;" value="Autentifikacija (RBAC)" vertex="1">
+          <mxGeometry height="80" width="260" x="760" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="309" parent="1" style="shape=component;whiteSpace=wrap;html=1;strokeWidth=2;" value="Baza podataka" vertex="1">
+          <mxGeometry height="80" width="200" x="1190" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="310" parent="1" style="shape=component;whiteSpace=wrap;html=1;strokeWidth=2;" value="Skladište dokumenata&#xa;(PDF/Excel)" vertex="1">
+          <mxGeometry height="80" width="240" x="950" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="350" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#dae8fc;" value="Klase:&#xa;Kooperant, Isporuka" vertex="1">
+          <mxGeometry height="70" width="220" x="560" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="351" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#dae8fc;" value="Klase:&#xa;AnalizaKvalitete" vertex="1">
+          <mxGeometry height="60" width="220" x="560" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="352" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#dae8fc;" value="Klase:&#xa;Proizvod, Serija, Zaliha" vertex="1">
+          <mxGeometry height="70" width="240" x="560" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="353" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#dae8fc;" value="Klase:&#xa;Narudzba, Racun, Isplata" vertex="1">
+          <mxGeometry height="70" width="240" x="560" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="4001" edge="1" parent="1" source="300" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeWidth=2;" target="301" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4002" edge="1" parent="1" source="301" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeWidth=2;" target="302" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4003" edge="1" parent="1" source="301" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeWidth=2;" target="303" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4004" edge="1" parent="1" source="301" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeWidth=2;" target="304" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4005" edge="1" parent="1" source="301" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeWidth=2;" target="305" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4006" edge="1" parent="1" source="301" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeWidth=2;" target="306" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4007" edge="1" parent="1" source="301" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeWidth=2;" target="307" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4008" edge="1" parent="1" source="301" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeWidth=2;" target="308" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4009" edge="1" parent="1" source="302" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeWidth=2;" target="309" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4010" edge="1" parent="1" source="303" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeWidth=2;" target="309" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4011" edge="1" parent="1" source="304" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeWidth=2;" target="309" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4012" edge="1" parent="1" source="305" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeWidth=2;" target="309" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4013" edge="1" parent="1" source="306" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeWidth=2;" target="309" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4014" edge="1" parent="1" source="307" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeWidth=2;" target="309" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4015" edge="1" parent="1" source="305" style="dashed=1;endArrow=open;endFill=0;html=1;strokeWidth=2;" target="310" value="račun/otpremnica">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4016" edge="1" parent="1" source="306" style="dashed=1;endArrow=open;endFill=0;html=1;strokeWidth=2;" target="310" value="obračuni">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Dijagram ugradnje" id="DEP-1">
+    <mxGraphModel dx="1426" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="600" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" value="Klijentska razina&#xa;(Web preglednik)" vertex="1">
+          <mxGeometry height="120" width="260" x="60" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="601" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" value="Aplikacijski poslužitelj&#xa;(API + Poslovna logika)" vertex="1">
+          <mxGeometry height="140" width="340" x="420" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="602" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" value="DB poslužitelj&#xa;(PostgreSQL/MySQL)" vertex="1">
+          <mxGeometry height="120" width="280" x="680" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="603" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" value="Datotečni poslužitelj&#xa;(Dokumenti)" vertex="1">
+          <mxGeometry height="120" width="280" x="900" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="604" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" value="Lokalna mreža mljekare&#xa;(ured/laboratorij)" vertex="1">
+          <mxGeometry height="120" width="260" x="60" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="610" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#fff2cc;" value="Web UI" vertex="1">
+          <mxGeometry height="60" width="200" x="90" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="611" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#fff2cc;" value="REST API&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="280" x="450" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="612" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#fff2cc;" value="Baza podataka&#xa;D1" vertex="1">
+          <mxGeometry height="60" width="220" x="710" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="613" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#fff2cc;" value="Dokumenti&#xa;PDF/Excel" vertex="1">
+          <mxGeometry height="60" width="220" x="930" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="614" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#fff2cc;" value="Radne stanice&#xa;(Otkup/Lab/Skladište)" vertex="1">
+          <mxGeometry height="60" width="240" x="70" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="7001" edge="1" parent="1" source="600" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeWidth=2;" target="601" value="HTTPS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7002" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeWidth=2;" target="601" value="LAN">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="300" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7003" edge="1" parent="1" source="601" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeWidth=2;" target="602" value="SQL">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7004" edge="1" parent="1" source="601" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeWidth=2;" target="603" value="File I/O">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

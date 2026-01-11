@@ -1,0 +1,1474 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.0" pages="10">
+  <diagram name="Konceptualni model" id="3lvXsm_AEFwxXiFYBVv6">
+    <mxGraphModel dx="2887" dy="1121" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-57" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" value="OSOBA&#xa;PK osobaID&#xa;ime&#xa;prezime&#xa;kontakt&#xa;adresa" vertex="1">
+          <mxGeometry height="140" width="260" x="60" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-58" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" value="ZAPOSLENIK&#xa;PK/FK osobaID&#xa;radnoMjesto" vertex="1">
+          <mxGeometry height="90" width="260" x="-470" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-59" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" value="KOOPERANT&#xa;PK/FK osobaID&#xa;brojFarme&#xa;IBAN" vertex="1">
+          <mxGeometry height="100" width="260" x="260" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-60" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" value="KUPAC&#xa;PK/FK osobaID&#xa;tipKupca&#xa;OIB/ID" vertex="1">
+          <mxGeometry height="100" width="260" x="750" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-61" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" value="KORISNICKI_RACUN&#xa;PK racunID&#xa;email (UQ)&#xa;lozinka&#xa;datumKreiranja&#xa;FK osobaID" vertex="1">
+          <mxGeometry height="140" width="300" x="-210" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-62" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" value="ULOGA&#xa;PK ulogaID&#xa;naziv" vertex="1">
+          <mxGeometry height="90" width="200" x="450" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-63" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" value="RACUN_ULOGA&#xa;PK racunID, ulogaID&#xa;FK racunID&#xa;FK ulogaID" vertex="1">
+          <mxGeometry height="110" width="260" x="750" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-64" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" value="ISPORUKA&#xa;PK isporukaID&#xa;FK kooperantID&#xa;datumVrijeme&#xa;kolicinaL&#xa;temperatura&#xa;cisterna" vertex="1">
+          <mxGeometry height="160" width="300" x="420" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-65" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" value="UZORAK&#xa;PK uzorakID&#xa;FK isporukaID&#xa;datumUzorka" vertex="1">
+          <mxGeometry height="110" width="250" x="580" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-66" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" value="ANALIZA&#xa;PK analizaID&#xa;FK uzorakID&#xa;masnoca&#xa;proteini&#xa;bakterije&#xa;antibiotici&#xa;status&#xa;korekcijaCijene" vertex="1">
+          <mxGeometry height="220" width="340" x="1110" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-67" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" value="PROIZVOD&#xa;PK proizvodID&#xa;naziv&#xa;jedinica&#xa;rokTrajanjaDana" vertex="1">
+          <mxGeometry height="120" width="260" x="230" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-68" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" value="PROIZVODNA_SERIJA&#xa;PK serijaID&#xa;FK proizvodID&#xa;datumProizvodnje&#xa;LOT&#xa;kolicina" vertex="1">
+          <mxGeometry height="140" width="300" x="230" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-69" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" value="SERIJA_ISPORUKA&#xa;PK serijaID, isporukaID&#xa;FK serijaID&#xa;FK isporukaID&#xa;kolicinaUtrošena" vertex="1">
+          <mxGeometry height="140" width="340" x="1110" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-70" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" value="ZALIHA&#xa;PK zalihaID&#xa;FK serijaID&#xa;lokacija&#xa;kolicina&#xa;rokTrajanja" vertex="1">
+          <mxGeometry height="130" width="300" x="780" y="1470" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-71" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" value="NARUDZBA&#xa;PK narudzbaID&#xa;FK kupacID&#xa;datum&#xa;status" vertex="1">
+          <mxGeometry height="120" width="260" x="-350" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-72" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" value="STAVKA_NARUDZBE&#xa;PK narudzbaID, proizvodID&#xa;FK narudzbaID&#xa;FK proizvodID&#xa;kolicina" vertex="1">
+          <mxGeometry height="130" width="320" x="-160" y="755" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-73" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" value="OTPREMNICA&#xa;PK otpremnicaID&#xa;FK narudzbaID&#xa;datum" vertex="1">
+          <mxGeometry height="110" width="250" x="510" y="1290" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-74" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" value="RACUN&#xa;PK racunID&#xa;FK narudzbaID&#xa;datum&#xa;iznos&#xa;statusPlacanja" vertex="1">
+          <mxGeometry height="130" width="300" x="1125" y="1190" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-75" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" value="UPLATA&#xa;PK uplataID&#xa;FK racunID&#xa;datum&#xa;iznos" vertex="1">
+          <mxGeometry height="110" width="260" x="1145" y="1460" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-76" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" value="ISPLATA_KOOPERANTU&#xa;PK isplataID&#xa;FK kooperantID&#xa;periodOd&#xa;periodDo&#xa;iznos&#xa;datum&#xa;status" vertex="1">
+          <mxGeometry height="170" width="340" x="140" y="1450" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-77" edge="1" parent="1" source="_eXxcAtKm3xcny6w_M5l-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="_eXxcAtKm3xcny6w_M5l-58" value="osobaID">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-78" edge="1" parent="1" source="_eXxcAtKm3xcny6w_M5l-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="_eXxcAtKm3xcny6w_M5l-59" value="osobaID">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-79" edge="1" parent="1" source="_eXxcAtKm3xcny6w_M5l-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="_eXxcAtKm3xcny6w_M5l-60" value="osobaID">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-80" edge="1" parent="1" source="_eXxcAtKm3xcny6w_M5l-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="_eXxcAtKm3xcny6w_M5l-61" value="osobaID">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-81" edge="1" parent="1" source="_eXxcAtKm3xcny6w_M5l-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="_eXxcAtKm3xcny6w_M5l-63" value="racunID">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-82" edge="1" parent="1" source="_eXxcAtKm3xcny6w_M5l-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="_eXxcAtKm3xcny6w_M5l-63" value="ulogaID">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-83" edge="1" parent="1" source="_eXxcAtKm3xcny6w_M5l-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="_eXxcAtKm3xcny6w_M5l-64" value="kooperantID">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-84" edge="1" parent="1" source="_eXxcAtKm3xcny6w_M5l-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="_eXxcAtKm3xcny6w_M5l-65" value="isporukaID">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-85" edge="1" parent="1" source="_eXxcAtKm3xcny6w_M5l-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="_eXxcAtKm3xcny6w_M5l-66" value="uzorakID">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-86" edge="1" parent="1" source="_eXxcAtKm3xcny6w_M5l-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="_eXxcAtKm3xcny6w_M5l-68" value="proizvodID">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-87" edge="1" parent="1" source="_eXxcAtKm3xcny6w_M5l-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="_eXxcAtKm3xcny6w_M5l-69" value="serijaID">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-88" edge="1" parent="1" source="_eXxcAtKm3xcny6w_M5l-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="_eXxcAtKm3xcny6w_M5l-69" value="isporukaID">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-89" edge="1" parent="1" source="_eXxcAtKm3xcny6w_M5l-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="_eXxcAtKm3xcny6w_M5l-70" value="serijaID">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-90" edge="1" parent="1" source="_eXxcAtKm3xcny6w_M5l-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="_eXxcAtKm3xcny6w_M5l-71" value="kupacID">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-91" edge="1" parent="1" source="_eXxcAtKm3xcny6w_M5l-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="_eXxcAtKm3xcny6w_M5l-72" value="narudzbaID">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-92" edge="1" parent="1" source="_eXxcAtKm3xcny6w_M5l-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="_eXxcAtKm3xcny6w_M5l-72" value="proizvodID">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-93" edge="1" parent="1" source="_eXxcAtKm3xcny6w_M5l-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="_eXxcAtKm3xcny6w_M5l-73" value="narudzbaID">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-94" edge="1" parent="1" source="_eXxcAtKm3xcny6w_M5l-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="_eXxcAtKm3xcny6w_M5l-74" value="narudzbaID">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-95" edge="1" parent="1" source="_eXxcAtKm3xcny6w_M5l-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="_eXxcAtKm3xcny6w_M5l-75" value="racunID">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_eXxcAtKm3xcny6w_M5l-96" edge="1" parent="1" source="_eXxcAtKm3xcny6w_M5l-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="_eXxcAtKm3xcny6w_M5l-76" value="kooperantID">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Logicki model" id="ThnXxIxO6id2aiqI_JPK">
+    <mxGraphModel dx="1426" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="110" value="OSOBA&#xa;PK osobaID&#xa;ime&#xa;prezime&#xa;kontakt&#xa;adresa" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="260" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="111" value="ZAPOSLENIK&#xa;PK/FK osobaID&#xa;radnoMjesto" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="190" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="112" value="KOOPERANT&#xa;PK/FK osobaID&#xa;brojFarme&#xa;IBAN" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="190" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="113" value="KUPAC&#xa;PK/FK osobaID&#xa;tipKupca&#xa;OIB/ID" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="190" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="114" value="KORISNICKI_RACUN&#xa;PK racunID&#xa;email (UQ)&#xa;lozinka&#xa;datumKreiranja&#xa;FK osobaID" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="310" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="115" value="ULOGA&#xa;PK ulogaID&#xa;naziv" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="380" y="330" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="116" value="RACUN_ULOGA&#xa;PK racunID, ulogaID&#xa;FK racunID&#xa;FK ulogaID" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="320" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="120" value="ISPORUKA&#xa;PK isporukaID&#xa;FK kooperantID&#xa;datumVrijeme&#xa;kolicinaL&#xa;temperatura&#xa;cisterna" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="20" width="300" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="121" value="UZORAK&#xa;PK uzorakID&#xa;FK isporukaID&#xa;datumUzorka" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="680" y="20" width="250" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="122" value="ANALIZA&#xa;PK analizaID&#xa;FK uzorakID&#xa;masnoca&#xa;proteini&#xa;bakterije&#xa;antibiotici&#xa;status&#xa;korekcijaCijene" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="980" y="20" width="340" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="123" value="PROIZVOD&#xa;PK proizvodID&#xa;naziv&#xa;jedinica&#xa;rokTrajanjaDana" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="210" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="124" value="PROIZVODNA_SERIJA&#xa;PK serijaID&#xa;FK proizvodID&#xa;datumProizvodnje&#xa;LOT&#xa;kolicina" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="210" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="125" value="SERIJA_ISPORUKA&#xa;PK serijaID, isporukaID&#xa;FK serijaID&#xa;FK isporukaID&#xa;kolicinaUtrošena" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="980" y="260" width="340" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="126" value="ZALIHA&#xa;PK zalihaID&#xa;FK serijaID&#xa;lokacija&#xa;kolicina&#xa;rokTrajanja" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="380" width="300" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="130" value="NARUDZBA&#xa;PK narudzbaID&#xa;FK kupacID&#xa;datum&#xa;status" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="480" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="131" value="STAVKA_NARUDZBE&#xa;PK narudzbaID, proizvodID&#xa;FK narudzbaID&#xa;FK proizvodID&#xa;kolicina" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="480" width="320" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="132" value="OTPREMNICA&#xa;PK otpremnicaID&#xa;FK narudzbaID&#xa;datum" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="680" y="530" width="250" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="133" value="RACUN&#xa;PK racunID&#xa;FK narudzbaID&#xa;datum&#xa;iznos&#xa;statusPlacanja" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="980" y="520" width="300" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="134" value="UPLATA&#xa;PK uplataID&#xa;FK racunID&#xa;datum&#xa;iznos" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="980" y="680" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="135" value="ISPLATA_KOOPERANTU&#xa;PK isplataID&#xa;FK kooperantID&#xa;periodOd&#xa;periodDo&#xa;iznos&#xa;datum&#xa;status" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="640" width="340" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="2000" value="osobaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="110" target="111">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2001" value="osobaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="110" target="112">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2002" value="osobaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="110" target="113">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2003" value="osobaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="111" target="114">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2004" value="racunID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="114" target="116">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2005" value="ulogaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="115" target="116">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2006" value="kooperantID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="112" target="120">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2007" value="isporukaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="120" target="121">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2008" value="uzorakID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="121" target="122">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2009" value="proizvodID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="123" target="124">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2010" value="serijaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="124" target="125">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2011" value="isporukaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="120" target="125">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2012" value="serijaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="124" target="126">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2013" value="kupacID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="113" target="130">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2014" value="narudzbaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="130" target="131">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2015" value="proizvodID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="123" target="131">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2016" value="narudzbaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="130" target="132">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2017" value="narudzbaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="130" target="133">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2018" value="racunID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="133" target="134">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2019" value="kooperantID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="112" target="135">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Konceptualni model" id="zlHnwYiMCEXDZgAKZsec">
+    <mxGraphModel dx="1426" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="10" value="OSOBA&#xa;- osobaID (PK)&#xa;- ime&#xa;- prezime&#xa;- kontakt&#xa;- adresa" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="20" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="ZAPOSLENIK&#xa;- osobaID (PK/FK)&#xa;- radnoMjesto" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="170" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="KOOPERANT&#xa;- osobaID (PK/FK)&#xa;- brojFarme&#xa;- IBAN" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="170" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="KUPAC&#xa;- osobaID (PK/FK)&#xa;- tipKupca&#xa;- OIB/ID" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="760" y="170" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="KORISNIČKI RAČUN&#xa;- racunID (PK)&#xa;- email&#xa;- lozinka&#xa;- datumKreiranja" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="290" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="ULOGA&#xa;- ulogaID (PK)&#xa;- naziv" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="430" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="ISPORUKA MLIJEKA&#xa;- isporukaID (PK)&#xa;- datumVrijeme&#xa;- količinaL&#xa;- temperatura" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="320" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="UZORAK/ANALIZA&#xa;- analizaID (PK)&#xa;- masnoća&#xa;- proteini&#xa;- status" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="760" y="320" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="PROIZVOD&#xa;- proizvodID (PK)&#xa;- naziv&#xa;- rokTrajanjaDana" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="470" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="PROIZVODNA SERIJA&#xa;- serijaID (PK)&#xa;- datumProizvodnje&#xa;- LOT" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="760" y="470" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="ZALIHA&#xa;- zalihaID (PK)&#xa;- lokacija&#xa;- količina&#xa;- rokTrajanja" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="760" y="610" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="NARUDŽBA&#xa;- narudzbaID (PK)&#xa;- datum&#xa;- status" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="580" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="STAVKA NARUDŽBE&#xa;- narudzbaID (FK)&#xa;- proizvodID (FK)&#xa;- količina" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="720" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="RAČUN/OTPREMNICA&#xa;- dokumentID (PK)&#xa;- datum&#xa;- iznos&#xa;- statusPlaćanja" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="650" width="260" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="ISPLATA KOOPERANTU&#xa;- isplataID (PK)&#xa;- periodOd/Do&#xa;- iznos&#xa;- status" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="790" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="30" value="ISA" style="shape=triangle;direction=south;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="530" y="140" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="10" target="30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="32" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="30" target="11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="33" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="30" target="12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="34" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="30" target="13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="40" value="IMA" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="320" y="320" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="41" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="11" target="40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="42" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="40" target="14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="43" value="DODIJELJENA" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="310" y="450" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="44" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="14" target="43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="45" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="43" target="15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="46" value="ISPORUČUJE" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="320" y="360" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="47" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="12" target="46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="48" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="46" target="16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="49" value="ANALIZIRA" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="700" y="360" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="50" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="16" target="49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="51" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="49" target="17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="52" value="PROIZVODI" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="700" y="520" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="53" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="18" target="52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="54" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="52" target="19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="55" value="KORISTI" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="700" y="450" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="56" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="19" target="55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="57" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="55" target="16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="58" value="SKLADIŠTI" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="930" y="560" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="59" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="19" target="58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="60" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="58" target="20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="61" value="NARUČUJE" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="320" y="610" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="62" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="13" target="61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="63" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="61" target="21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="64" value="SADRŽI" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="320" y="740" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="65" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="21" target="64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="66" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="64" target="22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="67" value="ODNOSI SE NA" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="360" y="780" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="68" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="22" target="67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="69" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="67" target="18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="70" value="GENERIRA" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="360" y="660" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="71" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="21" target="70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="72" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="70" target="23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="73" value="ISPLAĆUJE" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="360" y="880" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="74" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="12" target="73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="75" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="73" target="24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Logicki model" id="-h2-jDdRWpGJDOol61tw">
+    <mxGraphModel dx="1426" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="110" value="OSOBA&#xa;PK osobaID&#xa;ime&#xa;prezime&#xa;kontakt&#xa;adresa" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="260" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="111" value="ZAPOSLENIK&#xa;PK/FK osobaID&#xa;radnoMjesto" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="190" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="112" value="KOOPERANT&#xa;PK/FK osobaID&#xa;brojFarme&#xa;IBAN" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="190" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="113" value="KUPAC&#xa;PK/FK osobaID&#xa;tipKupca&#xa;OIB/ID" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="190" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="114" value="KORISNICKI_RACUN&#xa;PK racunID&#xa;email (UQ)&#xa;lozinka&#xa;datumKreiranja&#xa;FK osobaID" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="310" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="115" value="ULOGA&#xa;PK ulogaID&#xa;naziv" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="380" y="330" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="116" value="RACUN_ULOGA&#xa;PK racunID, ulogaID&#xa;FK racunID&#xa;FK ulogaID" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="320" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="120" value="ISPORUKA&#xa;PK isporukaID&#xa;FK kooperantID&#xa;datumVrijeme&#xa;kolicinaL&#xa;temperatura&#xa;cisterna" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="20" width="300" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="121" value="UZORAK&#xa;PK uzorakID&#xa;FK isporukaID&#xa;datumUzorka" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="680" y="20" width="250" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="122" value="ANALIZA&#xa;PK analizaID&#xa;FK uzorakID&#xa;masnoca&#xa;proteini&#xa;bakterije&#xa;antibiotici&#xa;status&#xa;korekcijaCijene" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="980" y="20" width="340" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="123" value="PROIZVOD&#xa;PK proizvodID&#xa;naziv&#xa;jedinica&#xa;rokTrajanjaDana" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="210" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="124" value="PROIZVODNA_SERIJA&#xa;PK serijaID&#xa;FK proizvodID&#xa;datumProizvodnje&#xa;LOT&#xa;kolicina" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="210" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="125" value="SERIJA_ISPORUKA&#xa;PK serijaID, isporukaID&#xa;FK serijaID&#xa;FK isporukaID&#xa;kolicinaUtrošena" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="980" y="260" width="340" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="126" value="ZALIHA&#xa;PK zalihaID&#xa;FK serijaID&#xa;lokacija&#xa;kolicina&#xa;rokTrajanja" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="380" width="300" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="130" value="NARUDZBA&#xa;PK narudzbaID&#xa;FK kupacID&#xa;datum&#xa;status" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="480" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="131" value="STAVKA_NARUDZBE&#xa;PK narudzbaID, proizvodID&#xa;FK narudzbaID&#xa;FK proizvodID&#xa;kolicina" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="480" width="320" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="132" value="OTPREMNICA&#xa;PK otpremnicaID&#xa;FK narudzbaID&#xa;datum" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="680" y="530" width="250" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="133" value="RACUN&#xa;PK racunID&#xa;FK narudzbaID&#xa;datum&#xa;iznos&#xa;statusPlacanja" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="980" y="520" width="300" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="134" value="UPLATA&#xa;PK uplataID&#xa;FK racunID&#xa;datum&#xa;iznos" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="980" y="680" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="135" value="ISPLATA_KOOPERANTU&#xa;PK isplataID&#xa;FK kooperantID&#xa;periodOd&#xa;periodDo&#xa;iznos&#xa;datum&#xa;status" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="640" width="340" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="2000" value="osobaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="110" target="111">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2001" value="osobaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="110" target="112">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2002" value="osobaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="110" target="113">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2003" value="osobaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="111" target="114">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2004" value="racunID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="114" target="116">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2005" value="ulogaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="115" target="116">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2006" value="kooperantID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="112" target="120">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2007" value="isporukaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="120" target="121">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2008" value="uzorakID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="121" target="122">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2009" value="proizvodID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="123" target="124">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2010" value="serijaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="124" target="125">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2011" value="isporukaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="120" target="125">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2012" value="serijaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="124" target="126">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2013" value="kupacID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="113" target="130">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2014" value="narudzbaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="130" target="131">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2015" value="proizvodID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="123" target="131">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2016" value="narudzbaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="130" target="132">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2017" value="narudzbaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="130" target="133">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2018" value="racunID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="133" target="134">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2019" value="kooperantID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="112" target="135">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Konceptualni model" id="-TEMBP9MMecV_LAU8K2C">
+    <mxGraphModel dx="1426" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="10" value="OSOBA&#xa;- osobaID (PK)&#xa;- ime&#xa;- prezime&#xa;- kontakt&#xa;- adresa" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="20" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="ZAPOSLENIK&#xa;- osobaID (PK/FK)&#xa;- radnoMjesto" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="170" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="KOOPERANT&#xa;- osobaID (PK/FK)&#xa;- brojFarme&#xa;- IBAN" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="170" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="KUPAC&#xa;- osobaID (PK/FK)&#xa;- tipKupca&#xa;- OIB/ID" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="760" y="170" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="KORISNIČKI RAČUN&#xa;- racunID (PK)&#xa;- email&#xa;- lozinka&#xa;- datumKreiranja" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="290" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="ULOGA&#xa;- ulogaID (PK)&#xa;- naziv" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="430" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="ISPORUKA MLIJEKA&#xa;- isporukaID (PK)&#xa;- datumVrijeme&#xa;- količinaL&#xa;- temperatura" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="320" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="UZORAK/ANALIZA&#xa;- analizaID (PK)&#xa;- masnoća&#xa;- proteini&#xa;- status" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="760" y="320" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="PROIZVOD&#xa;- proizvodID (PK)&#xa;- naziv&#xa;- rokTrajanjaDana" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="470" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="PROIZVODNA SERIJA&#xa;- serijaID (PK)&#xa;- datumProizvodnje&#xa;- LOT" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="760" y="470" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="ZALIHA&#xa;- zalihaID (PK)&#xa;- lokacija&#xa;- količina&#xa;- rokTrajanja" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="760" y="610" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="NARUDŽBA&#xa;- narudzbaID (PK)&#xa;- datum&#xa;- status" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="580" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="STAVKA NARUDŽBE&#xa;- narudzbaID (FK)&#xa;- proizvodID (FK)&#xa;- količina" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="720" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="RAČUN/OTPREMNICA&#xa;- dokumentID (PK)&#xa;- datum&#xa;- iznos&#xa;- statusPlaćanja" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="650" width="260" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="ISPLATA KOOPERANTU&#xa;- isplataID (PK)&#xa;- periodOd/Do&#xa;- iznos&#xa;- status" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="790" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="30" value="ISA" style="shape=triangle;direction=south;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="530" y="140" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="10" target="30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="32" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="30" target="11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="33" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="30" target="12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="34" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="30" target="13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="40" value="IMA" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="320" y="320" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="41" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="11" target="40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="42" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="40" target="14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="43" value="DODIJELJENA" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="310" y="450" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="44" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="14" target="43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="45" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="43" target="15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="46" value="ISPORUČUJE" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="320" y="360" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="47" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="12" target="46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="48" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="46" target="16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="49" value="ANALIZIRA" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="700" y="360" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="50" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="16" target="49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="51" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="49" target="17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="52" value="PROIZVODI" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="700" y="520" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="53" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="18" target="52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="54" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="52" target="19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="55" value="KORISTI" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="700" y="450" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="56" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="19" target="55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="57" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="55" target="16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="58" value="SKLADIŠTI" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="930" y="560" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="59" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="19" target="58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="60" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="58" target="20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="61" value="NARUČUJE" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="320" y="610" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="62" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="13" target="61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="63" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="61" target="21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="64" value="SADRŽI" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="320" y="740" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="65" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="21" target="64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="66" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="64" target="22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="67" value="ODNOSI SE NA" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="360" y="780" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="68" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="22" target="67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="69" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="67" target="18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="70" value="GENERIRA" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="360" y="660" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="71" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="21" target="70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="72" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="70" target="23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="73" value="ISPLAĆUJE" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="360" y="880" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="74" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="12" target="73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="75" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="73" target="24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Logicki model" id="CceTni6ngGTFjxnyHcTZ">
+    <mxGraphModel dx="1426" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="110" value="OSOBA&#xa;PK osobaID&#xa;ime&#xa;prezime&#xa;kontakt&#xa;adresa" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="260" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="111" value="ZAPOSLENIK&#xa;PK/FK osobaID&#xa;radnoMjesto" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="190" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="112" value="KOOPERANT&#xa;PK/FK osobaID&#xa;brojFarme&#xa;IBAN" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="190" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="113" value="KUPAC&#xa;PK/FK osobaID&#xa;tipKupca&#xa;OIB/ID" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="190" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="114" value="KORISNICKI_RACUN&#xa;PK racunID&#xa;email (UQ)&#xa;lozinka&#xa;datumKreiranja&#xa;FK osobaID" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="310" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="115" value="ULOGA&#xa;PK ulogaID&#xa;naziv" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="380" y="330" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="116" value="RACUN_ULOGA&#xa;PK racunID, ulogaID&#xa;FK racunID&#xa;FK ulogaID" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="320" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="120" value="ISPORUKA&#xa;PK isporukaID&#xa;FK kooperantID&#xa;datumVrijeme&#xa;kolicinaL&#xa;temperatura&#xa;cisterna" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="20" width="300" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="121" value="UZORAK&#xa;PK uzorakID&#xa;FK isporukaID&#xa;datumUzorka" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="680" y="20" width="250" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="122" value="ANALIZA&#xa;PK analizaID&#xa;FK uzorakID&#xa;masnoca&#xa;proteini&#xa;bakterije&#xa;antibiotici&#xa;status&#xa;korekcijaCijene" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="980" y="20" width="340" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="123" value="PROIZVOD&#xa;PK proizvodID&#xa;naziv&#xa;jedinica&#xa;rokTrajanjaDana" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="210" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="124" value="PROIZVODNA_SERIJA&#xa;PK serijaID&#xa;FK proizvodID&#xa;datumProizvodnje&#xa;LOT&#xa;kolicina" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="210" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="125" value="SERIJA_ISPORUKA&#xa;PK serijaID, isporukaID&#xa;FK serijaID&#xa;FK isporukaID&#xa;kolicinaUtrošena" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="980" y="260" width="340" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="126" value="ZALIHA&#xa;PK zalihaID&#xa;FK serijaID&#xa;lokacija&#xa;kolicina&#xa;rokTrajanja" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="380" width="300" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="130" value="NARUDZBA&#xa;PK narudzbaID&#xa;FK kupacID&#xa;datum&#xa;status" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="480" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="131" value="STAVKA_NARUDZBE&#xa;PK narudzbaID, proizvodID&#xa;FK narudzbaID&#xa;FK proizvodID&#xa;kolicina" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="480" width="320" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="132" value="OTPREMNICA&#xa;PK otpremnicaID&#xa;FK narudzbaID&#xa;datum" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="680" y="530" width="250" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="133" value="RACUN&#xa;PK racunID&#xa;FK narudzbaID&#xa;datum&#xa;iznos&#xa;statusPlacanja" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="980" y="520" width="300" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="134" value="UPLATA&#xa;PK uplataID&#xa;FK racunID&#xa;datum&#xa;iznos" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="980" y="680" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="135" value="ISPLATA_KOOPERANTU&#xa;PK isplataID&#xa;FK kooperantID&#xa;periodOd&#xa;periodDo&#xa;iznos&#xa;datum&#xa;status" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="640" width="340" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="2000" value="osobaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="110" target="111">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2001" value="osobaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="110" target="112">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2002" value="osobaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="110" target="113">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2003" value="osobaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="111" target="114">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2004" value="racunID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="114" target="116">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2005" value="ulogaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="115" target="116">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2006" value="kooperantID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="112" target="120">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2007" value="isporukaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="120" target="121">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2008" value="uzorakID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="121" target="122">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2009" value="proizvodID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="123" target="124">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2010" value="serijaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="124" target="125">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2011" value="isporukaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="120" target="125">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2012" value="serijaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="124" target="126">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2013" value="kupacID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="113" target="130">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2014" value="narudzbaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="130" target="131">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2015" value="proizvodID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="123" target="131">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2016" value="narudzbaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="130" target="132">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2017" value="narudzbaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="130" target="133">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2018" value="racunID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="133" target="134">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2019" value="kooperantID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="112" target="135">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Konceptualni model" id="XrF21E7rNnu0zEop9gnQ">
+    <mxGraphModel dx="1426" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="10" value="OSOBA&#xa;- osobaID (PK)&#xa;- ime&#xa;- prezime&#xa;- kontakt&#xa;- adresa" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="20" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="ZAPOSLENIK&#xa;- osobaID (PK/FK)&#xa;- radnoMjesto" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="170" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="KOOPERANT&#xa;- osobaID (PK/FK)&#xa;- brojFarme&#xa;- IBAN" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="170" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="KUPAC&#xa;- osobaID (PK/FK)&#xa;- tipKupca&#xa;- OIB/ID" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="760" y="170" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="KORISNIČKI RAČUN&#xa;- racunID (PK)&#xa;- email&#xa;- lozinka&#xa;- datumKreiranja" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="290" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="ULOGA&#xa;- ulogaID (PK)&#xa;- naziv" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="430" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="ISPORUKA MLIJEKA&#xa;- isporukaID (PK)&#xa;- datumVrijeme&#xa;- količinaL&#xa;- temperatura" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="320" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="UZORAK/ANALIZA&#xa;- analizaID (PK)&#xa;- masnoća&#xa;- proteini&#xa;- status" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="760" y="320" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="PROIZVOD&#xa;- proizvodID (PK)&#xa;- naziv&#xa;- rokTrajanjaDana" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="470" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="PROIZVODNA SERIJA&#xa;- serijaID (PK)&#xa;- datumProizvodnje&#xa;- LOT" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="760" y="470" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="ZALIHA&#xa;- zalihaID (PK)&#xa;- lokacija&#xa;- količina&#xa;- rokTrajanja" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="760" y="610" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="NARUDŽBA&#xa;- narudzbaID (PK)&#xa;- datum&#xa;- status" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="580" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="STAVKA NARUDŽBE&#xa;- narudzbaID (FK)&#xa;- proizvodID (FK)&#xa;- količina" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="720" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="RAČUN/OTPREMNICA&#xa;- dokumentID (PK)&#xa;- datum&#xa;- iznos&#xa;- statusPlaćanja" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="650" width="260" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="ISPLATA KOOPERANTU&#xa;- isplataID (PK)&#xa;- periodOd/Do&#xa;- iznos&#xa;- status" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="790" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="30" value="ISA" style="shape=triangle;direction=south;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="530" y="140" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="10" target="30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="32" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="30" target="11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="33" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="30" target="12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="34" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="30" target="13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="40" value="IMA" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="320" y="320" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="41" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="11" target="40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="42" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="40" target="14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="43" value="DODIJELJENA" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="310" y="450" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="44" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="14" target="43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="45" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="43" target="15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="46" value="ISPORUČUJE" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="320" y="360" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="47" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="12" target="46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="48" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="46" target="16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="49" value="ANALIZIRA" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="700" y="360" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="50" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="16" target="49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="51" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="49" target="17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="52" value="PROIZVODI" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="700" y="520" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="53" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="18" target="52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="54" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="52" target="19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="55" value="KORISTI" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="700" y="450" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="56" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="19" target="55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="57" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="55" target="16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="58" value="SKLADIŠTI" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="930" y="560" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="59" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="19" target="58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="60" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="58" target="20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="61" value="NARUČUJE" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="320" y="610" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="62" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="13" target="61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="63" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="61" target="21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="64" value="SADRŽI" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="320" y="740" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="65" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="21" target="64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="66" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="64" target="22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="67" value="ODNOSI SE NA" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="360" y="780" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="68" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="22" target="67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="69" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="67" target="18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="70" value="GENERIRA" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="360" y="660" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="71" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="21" target="70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="72" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="70" target="23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="73" value="ISPLAĆUJE" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="360" y="880" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="74" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="12" target="73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="75" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="73" target="24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Logicki model" id="w4SbXCvMVIrOklrv9ZWd">
+    <mxGraphModel dx="1426" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="110" value="OSOBA&#xa;PK osobaID&#xa;ime&#xa;prezime&#xa;kontakt&#xa;adresa" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="260" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="111" value="ZAPOSLENIK&#xa;PK/FK osobaID&#xa;radnoMjesto" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="190" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="112" value="KOOPERANT&#xa;PK/FK osobaID&#xa;brojFarme&#xa;IBAN" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="190" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="113" value="KUPAC&#xa;PK/FK osobaID&#xa;tipKupca&#xa;OIB/ID" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="190" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="114" value="KORISNICKI_RACUN&#xa;PK racunID&#xa;email (UQ)&#xa;lozinka&#xa;datumKreiranja&#xa;FK osobaID" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="310" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="115" value="ULOGA&#xa;PK ulogaID&#xa;naziv" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="380" y="330" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="116" value="RACUN_ULOGA&#xa;PK racunID, ulogaID&#xa;FK racunID&#xa;FK ulogaID" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="320" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="120" value="ISPORUKA&#xa;PK isporukaID&#xa;FK kooperantID&#xa;datumVrijeme&#xa;kolicinaL&#xa;temperatura&#xa;cisterna" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="20" width="300" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="121" value="UZORAK&#xa;PK uzorakID&#xa;FK isporukaID&#xa;datumUzorka" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="680" y="20" width="250" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="122" value="ANALIZA&#xa;PK analizaID&#xa;FK uzorakID&#xa;masnoca&#xa;proteini&#xa;bakterije&#xa;antibiotici&#xa;status&#xa;korekcijaCijene" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="980" y="20" width="340" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="123" value="PROIZVOD&#xa;PK proizvodID&#xa;naziv&#xa;jedinica&#xa;rokTrajanjaDana" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="210" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="124" value="PROIZVODNA_SERIJA&#xa;PK serijaID&#xa;FK proizvodID&#xa;datumProizvodnje&#xa;LOT&#xa;kolicina" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="210" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="125" value="SERIJA_ISPORUKA&#xa;PK serijaID, isporukaID&#xa;FK serijaID&#xa;FK isporukaID&#xa;kolicinaUtrošena" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="980" y="260" width="340" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="126" value="ZALIHA&#xa;PK zalihaID&#xa;FK serijaID&#xa;lokacija&#xa;kolicina&#xa;rokTrajanja" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="380" width="300" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="130" value="NARUDZBA&#xa;PK narudzbaID&#xa;FK kupacID&#xa;datum&#xa;status" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="480" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="131" value="STAVKA_NARUDZBE&#xa;PK narudzbaID, proizvodID&#xa;FK narudzbaID&#xa;FK proizvodID&#xa;kolicina" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="480" width="320" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="132" value="OTPREMNICA&#xa;PK otpremnicaID&#xa;FK narudzbaID&#xa;datum" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="680" y="530" width="250" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="133" value="RACUN&#xa;PK racunID&#xa;FK narudzbaID&#xa;datum&#xa;iznos&#xa;statusPlacanja" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="980" y="520" width="300" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="134" value="UPLATA&#xa;PK uplataID&#xa;FK racunID&#xa;datum&#xa;iznos" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="980" y="680" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="135" value="ISPLATA_KOOPERANTU&#xa;PK isplataID&#xa;FK kooperantID&#xa;periodOd&#xa;periodDo&#xa;iznos&#xa;datum&#xa;status" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="640" width="340" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="2000" value="osobaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="110" target="111">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2001" value="osobaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="110" target="112">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2002" value="osobaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="110" target="113">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2003" value="osobaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="111" target="114">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2004" value="racunID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="114" target="116">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2005" value="ulogaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="115" target="116">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2006" value="kooperantID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="112" target="120">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2007" value="isporukaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="120" target="121">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2008" value="uzorakID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="121" target="122">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2009" value="proizvodID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="123" target="124">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2010" value="serijaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="124" target="125">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2011" value="isporukaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="120" target="125">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2012" value="serijaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="124" target="126">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2013" value="kupacID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="113" target="130">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2014" value="narudzbaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="130" target="131">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2015" value="proizvodID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="123" target="131">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2016" value="narudzbaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="130" target="132">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2017" value="narudzbaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="130" target="133">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2018" value="racunID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="133" target="134">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2019" value="kooperantID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="112" target="135">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Konceptualni model" id="Om2FEjhnaUgSO--PYL8i">
+    <mxGraphModel dx="1426" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="10" value="OSOBA&#xa;- osobaID (PK)&#xa;- ime&#xa;- prezime&#xa;- kontakt&#xa;- adresa" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="20" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="ZAPOSLENIK&#xa;- osobaID (PK/FK)&#xa;- radnoMjesto" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="170" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="KOOPERANT&#xa;- osobaID (PK/FK)&#xa;- brojFarme&#xa;- IBAN" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="170" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="KUPAC&#xa;- osobaID (PK/FK)&#xa;- tipKupca&#xa;- OIB/ID" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="760" y="170" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="KORISNIČKI RAČUN&#xa;- racunID (PK)&#xa;- email&#xa;- lozinka&#xa;- datumKreiranja" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="290" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="ULOGA&#xa;- ulogaID (PK)&#xa;- naziv" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="430" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="ISPORUKA MLIJEKA&#xa;- isporukaID (PK)&#xa;- datumVrijeme&#xa;- količinaL&#xa;- temperatura" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="320" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="UZORAK/ANALIZA&#xa;- analizaID (PK)&#xa;- masnoća&#xa;- proteini&#xa;- status" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="760" y="320" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="PROIZVOD&#xa;- proizvodID (PK)&#xa;- naziv&#xa;- rokTrajanjaDana" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="470" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="PROIZVODNA SERIJA&#xa;- serijaID (PK)&#xa;- datumProizvodnje&#xa;- LOT" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="760" y="470" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="ZALIHA&#xa;- zalihaID (PK)&#xa;- lokacija&#xa;- količina&#xa;- rokTrajanja" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="760" y="610" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="NARUDŽBA&#xa;- narudzbaID (PK)&#xa;- datum&#xa;- status" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="580" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="STAVKA NARUDŽBE&#xa;- narudzbaID (FK)&#xa;- proizvodID (FK)&#xa;- količina" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="720" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="RAČUN/OTPREMNICA&#xa;- dokumentID (PK)&#xa;- datum&#xa;- iznos&#xa;- statusPlaćanja" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="650" width="260" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="ISPLATA KOOPERANTU&#xa;- isplataID (PK)&#xa;- periodOd/Do&#xa;- iznos&#xa;- status" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="790" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="30" value="ISA" style="shape=triangle;direction=south;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="530" y="140" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="10" target="30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="32" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="30" target="11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="33" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="30" target="12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="34" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="30" target="13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="40" value="IMA" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="320" y="320" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="41" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="11" target="40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="42" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="40" target="14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="43" value="DODIJELJENA" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="310" y="450" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="44" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="14" target="43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="45" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="43" target="15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="46" value="ISPORUČUJE" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="320" y="360" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="47" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="12" target="46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="48" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="46" target="16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="49" value="ANALIZIRA" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="700" y="360" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="50" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="16" target="49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="51" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="49" target="17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="52" value="PROIZVODI" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="700" y="520" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="53" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="18" target="52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="54" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="52" target="19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="55" value="KORISTI" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="700" y="450" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="56" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="19" target="55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="57" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="55" target="16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="58" value="SKLADIŠTI" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="930" y="560" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="59" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="19" target="58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="60" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="58" target="20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="61" value="NARUČUJE" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="320" y="610" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="62" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="13" target="61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="63" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="61" target="21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="64" value="SADRŽI" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="320" y="740" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="65" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="21" target="64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="66" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="64" target="22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="67" value="ODNOSI SE NA" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="360" y="780" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="68" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="22" target="67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="69" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="67" target="18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="70" value="GENERIRA" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="360" y="660" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="71" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="21" target="70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="72" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="70" target="23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="73" value="ISPLAĆUJE" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="360" y="880" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="74" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="12" target="73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="75" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="73" target="24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Logicki model" id="hIAIAc0IR4XhBwcpooCr">
+    <mxGraphModel dx="1426" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="110" value="OSOBA&#xa;PK osobaID&#xa;ime&#xa;prezime&#xa;kontakt&#xa;adresa" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="260" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="111" value="ZAPOSLENIK&#xa;PK/FK osobaID&#xa;radnoMjesto" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="190" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="112" value="KOOPERANT&#xa;PK/FK osobaID&#xa;brojFarme&#xa;IBAN" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="190" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="113" value="KUPAC&#xa;PK/FK osobaID&#xa;tipKupca&#xa;OIB/ID" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="190" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="114" value="KORISNICKI_RACUN&#xa;PK racunID&#xa;email (UQ)&#xa;lozinka&#xa;datumKreiranja&#xa;FK osobaID" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="310" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="115" value="ULOGA&#xa;PK ulogaID&#xa;naziv" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="380" y="330" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="116" value="RACUN_ULOGA&#xa;PK racunID, ulogaID&#xa;FK racunID&#xa;FK ulogaID" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="320" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="120" value="ISPORUKA&#xa;PK isporukaID&#xa;FK kooperantID&#xa;datumVrijeme&#xa;kolicinaL&#xa;temperatura&#xa;cisterna" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="20" width="300" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="121" value="UZORAK&#xa;PK uzorakID&#xa;FK isporukaID&#xa;datumUzorka" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="680" y="20" width="250" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="122" value="ANALIZA&#xa;PK analizaID&#xa;FK uzorakID&#xa;masnoca&#xa;proteini&#xa;bakterije&#xa;antibiotici&#xa;status&#xa;korekcijaCijene" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="980" y="20" width="340" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="123" value="PROIZVOD&#xa;PK proizvodID&#xa;naziv&#xa;jedinica&#xa;rokTrajanjaDana" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="210" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="124" value="PROIZVODNA_SERIJA&#xa;PK serijaID&#xa;FK proizvodID&#xa;datumProizvodnje&#xa;LOT&#xa;kolicina" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="210" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="125" value="SERIJA_ISPORUKA&#xa;PK serijaID, isporukaID&#xa;FK serijaID&#xa;FK isporukaID&#xa;kolicinaUtrošena" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="980" y="260" width="340" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="126" value="ZALIHA&#xa;PK zalihaID&#xa;FK serijaID&#xa;lokacija&#xa;kolicina&#xa;rokTrajanja" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="380" width="300" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="130" value="NARUDZBA&#xa;PK narudzbaID&#xa;FK kupacID&#xa;datum&#xa;status" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="480" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="131" value="STAVKA_NARUDZBE&#xa;PK narudzbaID, proizvodID&#xa;FK narudzbaID&#xa;FK proizvodID&#xa;kolicina" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="480" width="320" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="132" value="OTPREMNICA&#xa;PK otpremnicaID&#xa;FK narudzbaID&#xa;datum" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="680" y="530" width="250" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="133" value="RACUN&#xa;PK racunID&#xa;FK narudzbaID&#xa;datum&#xa;iznos&#xa;statusPlacanja" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="980" y="520" width="300" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="134" value="UPLATA&#xa;PK uplataID&#xa;FK racunID&#xa;datum&#xa;iznos" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="980" y="680" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="135" value="ISPLATA_KOOPERANTU&#xa;PK isplataID&#xa;FK kooperantID&#xa;periodOd&#xa;periodDo&#xa;iznos&#xa;datum&#xa;status" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="640" width="340" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="2000" value="osobaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="110" target="111">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2001" value="osobaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="110" target="112">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2002" value="osobaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="110" target="113">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2003" value="osobaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="111" target="114">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2004" value="racunID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="114" target="116">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2005" value="ulogaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="115" target="116">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2006" value="kooperantID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="112" target="120">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2007" value="isporukaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="120" target="121">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2008" value="uzorakID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="121" target="122">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2009" value="proizvodID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="123" target="124">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2010" value="serijaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="124" target="125">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2011" value="isporukaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="120" target="125">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2012" value="serijaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="124" target="126">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2013" value="kupacID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="113" target="130">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2014" value="narudzbaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="130" target="131">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2015" value="proizvodID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="123" target="131">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2016" value="narudzbaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="130" target="132">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2017" value="narudzbaID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="130" target="133">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2018" value="racunID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="133" target="134">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2019" value="kooperantID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="112" target="135">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
