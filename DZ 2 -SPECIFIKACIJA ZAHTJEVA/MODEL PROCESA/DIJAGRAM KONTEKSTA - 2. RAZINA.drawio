@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.0">
+  <diagram name="DFD Razina 0" id="F9IuFnOuvutW19X-A2x6">
+    <mxGraphModel dx="1426" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="N9hZu9UmKsZN1FpRUHCM-208" edge="1" parent="1" source="N9hZu9UmKsZN1FpRUHCM-191" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="N9hZu9UmKsZN1FpRUHCM-195">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N9hZu9UmKsZN1FpRUHCM-191" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="300" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="N9hZu9UmKsZN1FpRUHCM-192" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="KONTROLA KVALITETE" vertex="1">
+          <mxGeometry height="30" width="60" x="330" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="N9hZu9UmKsZN1FpRUHCM-209" edge="1" parent="1" source="N9hZu9UmKsZN1FpRUHCM-193" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="N9hZu9UmKsZN1FpRUHCM-194">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N9hZu9UmKsZN1FpRUHCM-193" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="P2" vertex="1">
+          <mxGeometry height="30" width="60" x="280" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="N9hZu9UmKsZN1FpRUHCM-194" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="110" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="N9hZu9UmKsZN1FpRUHCM-195" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="330" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="N9hZu9UmKsZN1FpRUHCM-196" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="550" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="N9hZu9UmKsZN1FpRUHCM-197" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="ZAPRIMANJE UZORKA" vertex="1">
+          <mxGeometry height="30" width="60" x="140" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="N9hZu9UmKsZN1FpRUHCM-198" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="ODLUKA O KVALITETI" vertex="1">
+          <mxGeometry height="30" width="60" x="580" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="N9hZu9UmKsZN1FpRUHCM-201" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="LABARATORIJSKA ANALIZA" vertex="1">
+          <mxGeometry height="30" width="60" x="360" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="N9hZu9UmKsZN1FpRUHCM-203" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;p data-start=&quot;119&quot; data-end=&quot;129&quot;&gt;&lt;strong data-start=&quot;119&quot; data-end=&quot;129&quot;&gt;ULAZI:&lt;/strong&gt;&lt;/p&gt;&lt;p data-start=&quot;131&quot; data-end=&quot;153&quot;&gt;UZORAK MLIJEKA&amp;nbsp;&lt;/p&gt;&lt;p data-start=&quot;155&quot; data-end=&quot;172&quot;&gt;PODACI O ISPORUCI&lt;/p&gt;&lt;p data-start=&quot;174&quot; data-end=&quot;185&quot;&gt;&lt;strong data-start=&quot;174&quot; data-end=&quot;185&quot;&gt;IZLAZI:&lt;/strong&gt;&lt;/p&gt;&lt;p data-start=&quot;187&quot; data-end=&quot;209&quot;&gt;EVIDENCIJA UZORKA&amp;nbsp;&lt;/p&gt;&lt;p data-start=&quot;211&quot; data-end=&quot;237&quot;&gt;ZAHTJEV ZA ANALIZOM&amp;nbsp;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="140" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="N9hZu9UmKsZN1FpRUHCM-206" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;p data-start=&quot;278&quot; data-end=&quot;288&quot;&gt;&lt;strong data-start=&quot;278&quot; data-end=&quot;288&quot;&gt;ULAZI:&lt;/strong&gt;&lt;/p&gt;&lt;p data-start=&quot;290&quot; data-end=&quot;304&quot;&gt;UZORAK MLIJEKA&lt;/p&gt;&lt;p data-start=&quot;306&quot; data-end=&quot;325&quot;&gt;ZAHTJEV ZA ANALIZOM&lt;/p&gt;&lt;p data-start=&quot;327&quot; data-end=&quot;338&quot;&gt;&lt;strong data-start=&quot;327&quot; data-end=&quot;338&quot;&gt;IZLAZI:&lt;/strong&gt;&lt;/p&gt;&lt;p data-start=&quot;327&quot; data-end=&quot;338&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;REZULTATI ANALIZE&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p data-start=&quot;364&quot; data-end=&quot;387&quot;&gt;PODACI O ANALIZI&amp;nbsp;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="360" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="N9hZu9UmKsZN1FpRUHCM-207" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;p data-start=&quot;552&quot; data-end=&quot;562&quot;&gt;&lt;strong data-start=&quot;552&quot; data-end=&quot;562&quot;&gt;ULAZI:&lt;/strong&gt;&lt;/p&gt;&lt;p data-start=&quot;564&quot; data-end=&quot;580&quot;&gt;OCJENA KVALITETE&lt;/p&gt;&lt;p data-start=&quot;564&quot; data-end=&quot;580&quot;&gt;PODACI I REZULTATI O ANALIZE&lt;/p&gt;&lt;p data-start=&quot;582&quot; data-end=&quot;593&quot;&gt;&lt;strong data-start=&quot;582&quot; data-end=&quot;593&quot;&gt;IZLAZI:&lt;/strong&gt;&lt;/p&gt;&lt;p data-start=&quot;595&quot; data-end=&quot;624&quot;&gt;STATUS KVALITETE MLIJEKA&amp;nbsp;&lt;/p&gt;&lt;p data-start=&quot;626&quot; data-end=&quot;655&quot;&gt;KOREKCIJA OTKUPNE CIJENE&amp;nbsp;&lt;/p&gt;&lt;p data-start=&quot;657&quot; data-end=&quot;689&quot;&gt;ODOBRENO MLIJEKO ZA PRERADU&amp;nbsp;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="580" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="N9hZu9UmKsZN1FpRUHCM-210" edge="1" parent="1" source="N9hZu9UmKsZN1FpRUHCM-191" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.417;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="N9hZu9UmKsZN1FpRUHCM-196">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,241 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.0">
+  <diagram name="Model funkcija" id="3lvXsm_AEFwxXiFYBVv6">
+    <mxGraphModel dx="2852" dy="1570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="0. INFORMACIJSKI SUSTAV MLJEKARE" vertex="1">
+          <mxGeometry height="60" width="340" x="1000" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="1. OTKUP MLIJEKA" vertex="1">
+          <mxGeometry height="60" width="300" x="40" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-3" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="1.1 Evidencija kooperanata" vertex="1">
+          <mxGeometry height="46" width="300" x="40" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-5" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="1.2 Evidencija isporuka mlijeka" vertex="1">
+          <mxGeometry height="46" width="300" x="40" y="386" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-7" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="1.3 Mjerenje količine i temperature" vertex="1">
+          <mxGeometry height="46" width="300" x="40" y="442" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-9" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="1.4 Izračun otkupne cijene" vertex="1">
+          <mxGeometry height="46" width="300" x="40" y="498" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-11" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="1.5 Generiranje otkupnog lista" vertex="1">
+          <mxGeometry height="46" width="300" x="40" y="554" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-13" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1370" y="267" as="sourcePoint" />
+            <mxPoint x="1370" y="287" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="2. KONTROLA KVALITETE" vertex="1">
+          <mxGeometry height="60" width="300" x="380" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-15" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-14" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="2.1 Zaprimanje uzoraka" vertex="1">
+          <mxGeometry height="46" width="300" x="380" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-17" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-16" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="2.2 Laboratorijska analiza" vertex="1">
+          <mxGeometry height="46" width="300" x="380" y="386" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-19" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-18" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="2.3 Provjera graničnih vrijednosti" vertex="1">
+          <mxGeometry height="46" width="300" x="380" y="442" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-21" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-20" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="2.4 Odluka o prihvaćanju mlijeka" vertex="1">
+          <mxGeometry height="46" width="300" x="380" y="498" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-23" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-22" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="2.5 Povezivanje kvalitete s cijenom" vertex="1">
+          <mxGeometry height="46" width="300" x="380" y="554" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-25" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="267" as="sourcePoint" />
+            <mxPoint x="1720" y="287" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="3. PRERADA" vertex="1">
+          <mxGeometry height="60" width="300" x="720" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-27" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-26" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="3.1 Planiranje proizvodnje" vertex="1">
+          <mxGeometry height="46" width="300" x="720" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-29" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-28" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="3.2 Evidencija proizvodnih serija (LOT)" vertex="1">
+          <mxGeometry height="46" width="300" x="720" y="386" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-31" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-30" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="3.3 Praćenje utroška sirovina" vertex="1">
+          <mxGeometry height="46" width="300" x="720" y="442" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-33" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-32" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="3.4 Evidencija gubitaka i otpada" vertex="1">
+          <mxGeometry height="46" width="300" x="720" y="498" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-35" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-34" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-36" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="4. SKLADIŠTENJE I PRODAJA" vertex="1">
+          <mxGeometry height="60" width="300" x="1070" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-37" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-36" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-38" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="4.1 Upravljanje zalihama i lokacijama" vertex="1">
+          <mxGeometry height="46" width="300" x="1070" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-39" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-38" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-40" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="4.2 FIFO izdavanje proizvoda" vertex="1">
+          <mxGeometry height="46" width="300" x="1070" y="386" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-41" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-40" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-42" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="4.3 Obrada narudžbi kupaca" vertex="1">
+          <mxGeometry height="46" width="300" x="1070" y="442" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-43" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-42" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-44" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="4.4 Izdavanje otpremnica i računa" vertex="1">
+          <mxGeometry height="46" width="300" x="1070" y="498" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-45" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-44" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-46" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="4.5 Evidencija povrata i reklamacija" vertex="1">
+          <mxGeometry height="46" width="300" x="1070" y="554" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-47" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1770" y="537" as="sourcePoint" />
+            <mxPoint x="1770" y="557" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-48" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="5. FINANCIJE I ISPLATE" vertex="1">
+          <mxGeometry height="60" width="300" x="1420" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-49" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-48" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-50" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="5.1 Obračun isplata kooperantima" vertex="1">
+          <mxGeometry height="46" width="300" x="1420" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-51" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-50" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-52" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="5.2 Evidencija uplata kupaca" vertex="1">
+          <mxGeometry height="46" width="300" x="1420" y="386" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-53" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-52" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-54" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="5.3 Praćenje potraživanja i dospijeća" vertex="1">
+          <mxGeometry height="46" width="300" x="1420" y="442" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-55" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-54" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-56" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="6. IZVJEŠTAVANJE I ANALITIKA" vertex="1">
+          <mxGeometry height="60" width="300" x="1770" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-57" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-56" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-58" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="6.1 Dnevni otkup i kvaliteta po kooperantu" vertex="1">
+          <mxGeometry height="46" width="300" x="1770" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-59" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-58" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-60" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="6.2 Proizvodnja po proizvodu i seriji" vertex="1">
+          <mxGeometry height="46" width="300" x="1770" y="392" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-61" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-60" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-62" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="6.3 Stanje zaliha i rokovi trajanja" vertex="1">
+          <mxGeometry height="46" width="300" x="1770" y="448" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-63" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-62" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-64" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="6.4 Prodaja po kupcu i periodu" vertex="1">
+          <mxGeometry height="46" width="300" x="1770" y="504" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-65" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-64" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-66" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="7. ADMINISTRACIJA SUSTAVA" vertex="1">
+          <mxGeometry height="60" width="300" x="2120" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-67" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-66" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-68" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="7.1 Upravljanje korisnicima i ulogama" vertex="1">
+          <mxGeometry height="46" width="300" x="2120" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-69" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-68" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-70" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="7.2 Upravljanje šifrarnicima" vertex="1">
+          <mxGeometry height="46" width="300" x="2120" y="398" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-71" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-70" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-72" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=2;" value="7.3 Sigurnosne kopije i audit log" vertex="1">
+          <mxGeometry height="46" width="300" x="2120" y="458" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-73" edge="1" parent="1" source="OC05ZbZbRp-bLwgLc9L_-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="OC05ZbZbRp-bLwgLc9L_-72" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OC05ZbZbRp-bLwgLc9L_-74" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="Text" vertex="1">
+          <mxGeometry height="30" width="50" x="25" y="690" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
